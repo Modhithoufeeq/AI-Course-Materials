@@ -1,0 +1,14 @@
+TechNova Company Profile
+
+Founded: 2023
+Founders: Sarah Chen (CEO) and Marcus Rodriguez (CTO)
+Headquarters: Austin, Texas
+Mission: Democratize AI tools for small businesses
+
+Products:
+1. NovaAI - AI-powered business assistant
+2. NovaAnalytics - Data analysis platform
+3. NovaChat - Customer service chatbot
+
+Funding: $12M Series A (2024)
+Team Size: 45 employees

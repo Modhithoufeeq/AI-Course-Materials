@@ -1,0 +1,23 @@
+# Keep line endings consistent across Windows/Linux
+* text=auto
+
+# Explicitly declare binary assets so Git never tries to diff/merge them
+*.pdf   binary
+*.pptx  binary
+*.docx  binary
+*.gz    binary
+*.zip   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.ico   binary
+*.pyd   binary
+*.dll   binary
+*.so    binary
+*.db    binary
+*.db-wal binary
+*.db-shm binary
+*.index binary
+
+# Jupyter notebooks: render nicely on GitHub, don't diff the raw JSON
+*.ipynb text eol=lf
