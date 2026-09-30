@@ -1,0 +1,26 @@
+[
+  {
+    "question": "How many days per week can employees work remotely?",
+    "ground_truth": "Employees may work remotely up to three days per week, subject to manager approval."
+  },
+  {
+    "question": "How much paid annual leave do full-time employees accrue?",
+    "ground_truth": "Full-time employees accrue 25 days of paid annual leave per year."
+  },
+  {
+    "question": "What is the minimum password length under the IT security policy?",
+    "ground_truth": "Passwords must be at least 14 characters and rotated yearly."
+  },
+  {
+    "question": "What approval is required for a purchase of 8,000 euros?",
+    "ground_truth": "Purchases between 500 and 10,000 euros require two written quotes and finance sign-off."
+  },
+  {
+    "question": "How long is fully paid parental leave?",
+    "ground_truth": "Parental leave is 16 weeks fully paid for either parent, transferable up to 8 weeks."
+  },
+  {
+    "question": "When does sick leave require a medical certificate?",
+    "ground_truth": "A medical certificate is required after three consecutive sick days."
+  }
+]

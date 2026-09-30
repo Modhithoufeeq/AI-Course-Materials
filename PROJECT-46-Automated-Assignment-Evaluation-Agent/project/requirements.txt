@@ -1,0 +1,4 @@
+# Runtime dependencies for the Automated Assignment Evaluation Agent demo.
+# The core agent pipeline is deliberately dependency-free (stdlib only) so it
+# runs instantly in a fresh Colab runtime with no `pip install`. Keep this file
+# for documentation; it is intentionally minimal.

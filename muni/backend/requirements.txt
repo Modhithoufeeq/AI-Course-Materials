@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Backend runtime dependencies
+# Python 3.11+  (Docling / CrewAI / RAGAs all require >= 3.10)
+# Pin to major/minor versions that are known to interoperate; adjust if you
+# need a newer feature set. Everything here is free / open-source.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Web framework
+fastapi==0.115.8
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.3
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+
+# HTTP / utilities
+httpx==0.28.1
+PyYAML==6.0.2
+orjson==3.10.15
+
+# ── Knowledge base: preprocessing, vector store ──────────────────────────────
+docling==2.2.0
+psycopg[binary]==3.2.3
+
+# ── LlamaIndex RAG stack ─────────────────────────────────────────────────────
+llama-index-core==0.12.19
+llama-index-vector-stores-postgres==0.3.3
+llama-index-embeddings-ollama==0.5.2
+llama-index-llms-ollama==0.5.4
+llama-index-readers-file==0.4.4
+
+# ── Loose LangChain pieces required by CrewAI / RAGAs ────────────────────────
+langchain==0.3.15
+langchain-core==0.3.41
+langchain-community==0.3.15
+langchain-ollama==0.2.2
+
+# ── Multi-agent orchestration ────────────────────────────────────────────────
+crewai==0.80.0
+
+# ── Observability: OpenTelemetry → Arize Phoenix (OTLP collector) ────────────
+opentelemetry-api==1.29.0
+opentelemetry-sdk==1.29.0
+opentelemetry-exporter-otlp-proto-http==1.29.0
+openinference-instrumentation-llama-index==2.2.2
+openinference-instrumentation-crewai==0.1.1
+openinference-semantic-conventions==0.1.13
+arize-phoenix-client>=9.0

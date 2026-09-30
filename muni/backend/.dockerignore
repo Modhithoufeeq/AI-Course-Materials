@@ -1,0 +1,16 @@
+# Generated PDFs / ingested artifacts
+data/documents/*
+!data/documents/.gitkeep
+data/reports/*
+!data/reports/.gitkeep
+
+# Python
+**/__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Environment / secrets
+.env
+backend/.env

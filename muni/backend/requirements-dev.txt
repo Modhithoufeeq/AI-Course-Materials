@@ -1,0 +1,16 @@
+# Development & evaluation-only dependencies (not needed at runtime)
+-r requirements.txt
+
+# RAG evaluation
+ragas==0.2.4
+
+# Sample PDF generation
+reportlab==4.2.5
+
+# Google Drive ingestion support (optional; used by scripts/_gdrive_loader.py)
+gdown==5.2.0
+
+# Testing / linting
+pytest==8.3.4
+pytest-asyncio==0.25.0
+ruff==0.9.2

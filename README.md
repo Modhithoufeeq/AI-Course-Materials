@@ -16,6 +16,8 @@ version-controlled and viewable on the web.
 | 4 | [`Complete-GenAI-Course-Python-Langchain/`](./Complete-GenAI-Course-Python-Langchain) | **Complete GenAI course with Python & LangChain** | 19 notebooks (prompt chains → RAG → multi-agent) + 6 runnable Streamlit/CLI apps (QnA bot, Google agent, SQL agent, RAG agent, LangGraph bot) with sample data |
 | 5 | [`agentic-ai-security/`](./agentic-ai-security) | **Agentic AI security** — secure vs. insecure agent comparison | `unsecure-ai-agent/` (prompt-injection-prone MCP agent) vs. `secure-ai-agent/` (hardened MCP server + guardrails), `pyproject.toml`, `uv.lock` |
 | 6 | [`Class_Materials/`](./Class_Materials) | **Deep-learning class files** | ANN hyper-parameters, CNN, RNN/LSTM (+ machine-translation project), TensorFlow/Keras on MNIST, Word Embeddings (Word2Vec) — slides, PDFs, notebooks |
+| 7 | [`muni/`](./muni) | **muni — agentic RAG document-search platform** | FastAPI backend + Ollama + pgvector + CrewAI + Phoenix, React/TypeScript frontend, Docker, pytest suite, ingestion pipeline, GitHub Actions CI |
+| 8 | [`PROJECT-46-Automated-Assignment-Evaluation-Agent/`](./PROJECT-46-Automated-Assignment-Evaluation-Agent) | **PROJECT 46 — Automated Assignment Evaluation Agent** | FastAPI backend + React frontend, ChromaDB RAG, multi-provider LLM support (Gemini / OpenAI / Anthropic), automated scoring & feedback, Docker Compose, demo videos |
 
 ---
 
@@ -74,11 +76,28 @@ git-ignored — recreate them locally after cloning.
 
 ## 📝 Notes
 
-- This repository is a **consolidation of local course-material archives** (originally
-  downloaded as `*-main.zip` bundles). Folder names were normalized and one duplicate
-  archive (`CrewAI.zip` vs `CrewAI_Course_10_Notebooks.zip`) was merged.
-- The ~386 MB Python virtualenv that shipped inside the original `CrewAI.zip` archive
-  was intentionally **excluded** — it is reproducible from `requirements.txt` and would
-  have exceeded GitHub's file-size limits.
+- This repository is a **consolidation of local course-material archives and project
+  snapshots** (originally downloaded as `*-main.zip` bundles and local folders). Folder
+  names were normalized, and duplicate archives were merged rather than uploaded twice:
+
+  | Duplicate / older archive | Resolution |
+  |---|---|
+  | `CrewAI.zip` vs `CrewAI_Course_10_Notebooks.zip` | merged → `CrewAI_Course_10_Notebooks/` |
+  | `=.zip` | byte-identical clone of `Agent_Flow.zip` → skipped |
+  | `Agent_Flow_old.zip` | superseded older revision of `Agent_Flow/` → skipped |
+  | `muni.zip` / `muni-project.zip` | subsets of `muni_up.zip` → only the newest was used |
+  | `Destar_Document.zip` | personal identity documents → kept in a **separate private repo** |
+
+- Large **generated** folders were intentionally **excluded** — they are reproducible
+  locally and would have exceeded GitHub's file-size limits:
+
+  | Excluded | Where | Size |
+  |---|---|---|
+  | `.venv-c311/` | `CrewAI.zip` | ~386 MB |
+  | `backend/.venv/` | `muni_up.zip` | ~84 MB |
+  | `venv-video/` | PROJECT 46 | ~147 MB |
+  | `frontend/node_modules/` | PROJECT 46 | ~86 MB |
+
+  In total **~37,600 generated files were filtered out**; only real source is committed.
 - Course materials, PDFs and slide decks remain the property of their respective
   authors/instructors and are included here for personal study and reference.
